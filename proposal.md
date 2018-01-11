@@ -19,10 +19,14 @@ Rossmann 在欧洲经营7国经营着3000家药店，目前，Rossmann商店的�
 我要解决的问题是属于监督学习领域，我想通过用深度学习的方法用在监督学习上看效果如何
 
 - _输入数据集_  
-train.csv - historical data including Sales  
-test.csv - historical data excluding Sales  
-sample_submission.csv - a sample submission file in the correct format  
-store.csv - supplemental information about the stores  
+ train.csv - 包括销售额的历史数据训练用  
+包含有"Store","DayOfWeek","Date","Sales","Customers","Open","Promo","StateHoliday","SchoolHoliday"字段。  
+test.csv - 包括销售额的历史数据测试用historical data excluding Sales  
+包含有"Id","Store","DayOfWeek","Date","Open","Promo","StateHoliday","SchoolHoliday"字段。  
+sample_submission.csv - 预测数据格式样本  
+包含有"Id","Sales"字段。  
+store.csv - 关于商店的附加信息  
+包含有"Store","StoreType","Assortment","CompetitionDistance","CompetitionOpenSinceMonth"，"CompetitionOpenSinceYear","Promo2","Promo2SinceWeek","Promo2SinceYear","PromoInterval"字段。
 
 
 - _输入数据含义如下_  
@@ -42,8 +46,6 @@ Promo2 - 指的是持续和连续的促销活动。: 0 = 商店没有参加, 1 =
 Promo2Since[Year/Week] - 表示参加连续促销开始的年份和周。  
 PromoInterval - 描述持续促销间隔开始，促销的月份代表新的一轮，月份意味着每一轮的开始在哪几个月。  
 
-- _需要解决的问题涉及哪个领域？做这个项目的出发点？有哪些相关的数据集或输入数据？_
-- _问题的背景信息能够让完全没接触过这个问题的人充分了解这个问题吗？_
 
 ### 问题陈述
 在这个部分，你需要清楚地为你将要解决的问题下定义，这应该包括你解决问题将要使用的策略（任务的大纲）。你同时要详尽地讨论你期望的结果是怎样的。有几个问题是需要考虑的：
