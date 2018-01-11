@@ -10,27 +10,37 @@
 _(大概 1-2 页)_
 
 ### 项目概述
-Rossmann 在欧洲经营7国经营着3000家药店，目前，Rossmann商店的经理被要求预测他们未来六周的日销售情况，商店销售收很多因素的影响，包括促销，竞争，学校放假和法定节假日，节气性和区域性。在数千独立经营者预测的销售给予他们各自的情况，结果的准确性各有不同。
+
+- _项目背景_  
+Rossmann 在欧洲经营7国经营着3000家药店，目前，Rossmann商店的经理被要求预测他们未来六周的日销售情况，商店销售收很多因素的影响，包括促销，竞争，学校放假和法定节假日，节气性和区域性。由于数千经营者依据他们独特的情况预测销售情况，结果的准确性可能有很大不同。
 在这个项目中，将挑战预测6周的1115家德国境内的Rossmann商店的每日销售额，可靠的销售预报可以让商店经营者增加工作效率和积极性创建更高效的工作人员安排。通过帮助Rossmann创建一个强壮的预测模型，你将帮助经营者停留在关注对他们来说什么是最重要的：他们的客户和他们的团队。
 
-我要解决的问题是属于监督学习，
-在这个部分，你需要用浅显简洁的语句描述这个项目的一个总体的概念。有几个问题是需要考虑的：
+- _项目出发点_  
+我要解决的问题是属于监督学习领域，我想通过用深度学习的方法用在监督学习上看效果如何
 
-Id - 代表商店的ID
-Store - a unique Id for each store
-Sales - the turnover for any given day (this is what you are predicting)
-Customers - the number of customers on a given day
-Open - an indicator for whether the store was open: 0 = closed, 1 = open
-StateHoliday - indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None
-SchoolHoliday - indicates if the (Store, Date) was affected by the closure of public schools
-StoreType - differentiates between 4 different store models: a, b, c, d
-Assortment - describes an assortment level: a = basic, b = extra, c = extended
-CompetitionDistance - distance in meters to the nearest competitor store
-CompetitionOpenSince[Month/Year] - gives the approximate year and month of the time the nearest competitor was opened
-Promo - indicates whether a store is running a promo on that day
-Promo2 - Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating
-Promo2Since[Year/Week] - describes the year and calendar week when the store started participating in Promo2
-PromoInterval - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
+- _输入数据集_  
+train.csv - historical data including Sales  
+test.csv - historical data excluding Sales  
+sample_submission.csv - a sample submission file in the correct format  
+store.csv - supplemental information about the stores  
+
+
+- _输入数据含义如下_  
+Id - 测试集中表示一条记录的编号。  
+Store - 每个商店的唯一编号。  
+Sales - 任意一个给定日期的销售营业额。  
+Customers - 给定那一天的消费者数。  
+Open - 商店是否开门标志，0为关，1为开。  
+StateHoliday - 表明影响商店关门的节假日，正常来说所有商店，除了极少数，都会在节假日关门，a=所有的节假日，b=复活节，c=圣诞节，所有学校都会在公共假日和周末关门。  
+SchoolHoliday - 表明商店的时间是否受到公共学校放假影响。  
+StoreType - 四种不同的商店类型a，b，c和d。  
+Assortment - 描述种类的程度，a = basic, b = extra, c = extended。  
+CompetitionDistance - 最近的竞争对手的商店的距离。  
+CompetitionOpenSince[Month/Year] - 最近的竞争者商店大概开业的年和月时间。  
+Promo - 表明商店该天是否在进行促销。  
+Promo2 - 指的是持续和连续的促销活动。: 0 = 商店没有参加, 1 = 商店正在参加。 
+Promo2Since[Year/Week] - 表示参加连续促销开始的年份和周。  
+PromoInterval - 描述持续促销间隔开始，促销的月份代表新的一轮，月份意味着每一轮的开始在哪几个月。  
 
 - _需要解决的问题涉及哪个领域？做这个项目的出发点？有哪些相关的数据集或输入数据？_
 - _问题的背景信息能够让完全没接触过这个问题的人充分了解这个问题吗？_
