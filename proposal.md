@@ -16,7 +16,7 @@ Rossmann 在欧洲经营7国经营着3000家药店，目前，Rossmann商店的�
 在这个项目中，将挑战预测6周的1115家德国境内的Rossmann商店的每日销售额，可靠的销售预报可以让商店经营者增加工作效率和积极性创建更高效的工作人员安排。通过帮助Rossmann创建一个强壮的预测模型，你将帮助经营者停留在关注对他们来说什么是最重要的：他们的客户和他们的团队。
 
 - _项目出发点_  
-我要解决的问题是属于监督学习领域，我想通过用深度学习的方法用在监督学习上看效果如何
+我要解决的问题是属于监督学习领域，我想通过用深度学习的方法用在监督学习上看效果如何。
 
 - _输入数据集_  
  train.csv - 包括销售额的历史数据训练用  
@@ -26,7 +26,7 @@ test.csv - 包括销售额的历史数据测试用historical data excluding Sale
 sample_submission.csv - 预测数据格式样本  
 包含有"Id","Sales"字段。  
 store.csv - 关于商店的附加信息  
-包含有"Store","StoreType","Assortment","CompetitionDistance","CompetitionOpenSinceMonth"，"CompetitionOpenSinceYear","Promo2","Promo2SinceWeek","Promo2SinceYear","PromoInterval"字段。
+包含有"Store","StoreType","Assortment","CompetitionDistance","CompetitionOpenSinceMonth"，"CompetitionOpenSinceYear","Promo2","Promo2SinceWeek","Promo2SinceYear","PromoInterval"字段。   
 
 
 - _输入数据含义如下_  
@@ -49,7 +49,13 @@ PromoInterval - 描述持续促销间隔开始，促销的月份代表新的一�
 
 ### 问题陈述
 在这个部分，你需要清楚地为你将要解决的问题下定义，这应该包括你解决问题将要使用的策略（任务的大纲）。你同时要详尽地讨论你期望的结果是怎样的。有几个问题是需要考虑的：
-- _你是否清楚地定义了这个问题。站在读者的角度，他们能否明白你将要解决的问题是什么。_
+- _你是否清楚地定义了这个问题。站在读者的角度，他们能否明白你将要解决的问题是什么。_    
+我要通过对旧的销售记录的学习建模，然后预测六个月后的销售情况。
+
+
+
+
+
 - _你是否详尽地阐述了你将会如何解决这个问题？_
 - _你期望什么样的结果，读者能明白你期望的这个结果吗？_
 
