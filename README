@@ -1,0 +1,8 @@
+1.python代码是在script里的Rossmann.ipynb
+2.毕业论文在本目录下的Rossmann_capstore_report.pdf
+3.最终模型训练时间大概是15分钟以内，20000颗树的模型训练时间是2小时以内，40000颗树的模型训练时间3小时以内。
+4.预测结果保存在script里
+	xgboost_submission.csv是初步预测结果
+	20000_xgboost_submission.csv是20000颗树模型预测结果
+	40000_xgboost_submission.csv是40000颗树模型预测结果
+5.上传kaggle评价后20000_xgboost_submission.csv的分数最高为0.11470作为最终的提交数据。
